@@ -1,4 +1,4 @@
-# association-sportive-springboot-angular-mongodb-crud
+# Project "Association Sportive"
 
 A Spring Boot project with a MongoDB database and with Angular for the Front end.
 
