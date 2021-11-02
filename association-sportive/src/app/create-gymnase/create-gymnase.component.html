@@ -1,0 +1,29 @@
+<!-- TODO: mat-card or mat-form element to insert -->
+<!-- Il faut ce syntaxe 'gymnase?' car elle peut etre potentiel 'undefined' -->
+<div>
+    <p>{{ gymnase?.gymnaseId }}</p>
+    <p>{{ gymnase?.gymnaseNom }}</p>
+    <p>{{ gymnase?.gymnaseAdresse }}</p>
+    <p>{{ gymnase?.gymnaseVille }}</p>
+    <p>{{ gymnase?.gymnaseSurface }}</p>
+    <div>
+        <!-- click event-et kell hozzarendelni, amikor a + gombra klikkelunk,
+        hogy tobb seance-ot adjun hozza -->
+        <ul *ngFor="let seance of gymnase?.seances">
+            <li>{{ seance?.entraineurId}}</li>
+            <li>{{ seance?.jour}}</li>
+            <li>{{ seance?.horaire }}</li>
+            <li>{{ seance?.duree }}</li>
+            <li>{{ seance?.libelle }}</li>
+        </ul>
+
+        <!-- <ul>
+            <li>{{ gymnase?.seanceIdEntraineur}}</li>
+            <li>{{ gymnase?.seanceJour}}</li>
+            <li>{{ gymnase?.seanceHoraire }}</li>
+            <li>{{ gymnase?.seanceDuree }}</li>
+            <li>{{ gymnase?.seanceLibelle }}</li>
+        </ul> -->
+
+    </div>
+</div>

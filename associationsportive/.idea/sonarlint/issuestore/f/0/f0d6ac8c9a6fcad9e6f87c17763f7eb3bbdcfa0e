@@ -1,0 +1,5 @@
+
+p
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ð­Ì_8êð‘ÁÉ/
+„
+java:S1128"gRemove this unused import 'org.springframework.data.mongodb.repository.config.EnableMongoRepositories'.(ÆàÉ÷8êð‘ÁÉ/

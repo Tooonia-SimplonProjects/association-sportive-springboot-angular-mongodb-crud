@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-card-title>Détails de la gymnase {{ gymnase?.gymnaseNom }}</mat-card-title>
+    <div>
+        <p>{{ gymnase?.gymnaseId }}</p>
+        <p>{{ gymnase?.gymnaseNom }}</p>
+        <p>{{ gymnase?.gymnaseAdresse }}</p>
+        <p>{{ gymnase?.gymnaseVille }}</p>
+        <p>{{ gymnase?.gymnaseSurface }}</p>
+        <div *ngIf="gymnase?.seances?.length">
+            <ul *ngFor="let seance of gymnase?.seances">
+                <!-- ici, si je ne respecte pas l'appellation des propriétés de mon code Java,
+                il faudra faire le mapping dans le service, comme c'est le cas actuellement -->
+                <li>{{ seance.libelle}}</li>
+                <li>{{ seance.entraineurId}}</li>
+                <li>{{ seance.jour}}</li>
+                <li>{{ seance.horaire}}</li>
+                <li>{{ seance.duree}}</li>
+            </ul>
+        </div>
+        <mat-card-actions>
+            <button mat-button>Mettre à jour</button>
+            <button mat-button>Supprimer</button>
+        </mat-card-actions>
+    </div>
+
+    <!-- <router-outlet></router-outlet> -->
+  </mat-card>

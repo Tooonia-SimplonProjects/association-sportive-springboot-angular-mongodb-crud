@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>Liste des gymnases</mat-card-title>
+    <mat-card-actions>
+      <button mat-button> + Créer nouvelle gymnase</button>
+    </mat-card-actions>
+    <div *ngFor="let gymnase of gymnases">
+        <p>{{ gymnase.gymnaseNom }}</p>
+        <p>{{ gymnase.gymnaseVille }}</p>
+        <mat-card-actions>
+            <button mat-button (click)="detailsGymnase(gymnase.gymnaseIdUnique)">Détails</button>
+            <button mat-button>Mettre à jour</button>
+            <button mat-button>Supprimer</button>
+        </mat-card-actions>
+    </div>
+
+    <!-- <router-outlet></router-outlet> -->
+  </mat-card>
